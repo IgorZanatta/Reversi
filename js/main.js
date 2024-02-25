@@ -76,7 +76,7 @@
     function CheckClick() {
         $('.board .square').click(function () {
             // Adiciona os ouvintes de cliques nas células do tabuleiro
-            if(defPlayer !== 0 && url.includes("http://127.0.0.1:5500/html/JogoIa.html")) {
+            if(defPlayer !== 0 && url.includes("https://igorzanatta.github.io/Reversi/html/JogoIa.html")) {
                 return;
             }
 
@@ -148,7 +148,7 @@
     
     $("#restartButton").click(function () {
         // Reinicia o jogo ao clicar no botão de reiniciar
-        if(url.includes("http://127.0.0.1:5500/html/JogoIa.html")){
+        if(url.includes("https://igorzanatta.github.io/Reversi/html/JogoIa.html")){
         startGameIA();
         }else{
         startGame();
