@@ -11,7 +11,7 @@
     //http://127.0.0.1:5500/Trabalho-IA/html/JogoIa.html//
     //http://127.0.0.1:5500/Trabalho-IA/html/jogo.html//
     
-    if(url.includes("http://127.0.0.1:5500/html/JogoIa.html")){
+    if(url.includes("https://igorzanatta.github.io/Reversi/html/JogoIa.html")){
         startGameIA();
     }else{
         startGame();
