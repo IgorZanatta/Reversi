@@ -1,0 +1,122 @@
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+  
+.option{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo{
+  width: 400px;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolde;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-2 {
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  display: block;
+  background-color: #f1f1f1;
+}
+
+.box-1 {
+  margin-top: 50px;
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  display: block;
+}
+  
+.optionjogo{
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.game {
+  margin: auto;
+}
+
+.boardContainer {
+  min-width: 400px;
+}
+
+.board {
+  margin: auto;
+}
+
+.board td {
+  width: 60px;
+  height: 60px;
+  border: 1.2px solid black;
+  background-color: blue;
+}
+
+.board td div {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: auto;
+  transition: 1s background-color;
+}
+
+.board td.black div {
+  background-color: black;
+}
+
+.board td.white div {
+  background-color: white;
+}
+
+.game-controls{
+  text-align: center;
+}
+
+.game-controls button {
+  padding: 15px;
+  color: white;
+  background-color: #2f2f2f;
+  border: none;
+  outline: none;
+}
+
+.game-controls .score {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.turn {
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0;
+}
+
+.winner {
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #d7d7d7;
+}
