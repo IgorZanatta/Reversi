@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo Reverse</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="game-controls">
+            <div class="score">
+                <div class="player1">Player 1 (Pretas): <span id="score1"></span></div>
+                <div class="player1">Player 2 (Brancas): <span id="score2"></span></div>
+            </div>
+            <div class="winner"></div>
+        </div>
+        <div class="boardContainer"></div>
+        <div class="turn"></div>
+        <div class="buttons">
+            <button class="btt" id="restartButton">REINICIAR</button>
+        </div>
+        <div class="box-3">
+            <a href="../index.html" class="retornar">Voltar</a>
+        </div>
+    </div>
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <script src="./js/Board.js"></script>
+    <script src="./js/MiniMax.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="">
+    <script src="./js/main.js"></script>
+    <script src="./js/popup.js"></script>
+
+</head>
+
+<body>
+    <header class="option">
+        
+        <div class="opt">
+            <h1 style="text-align: center;">Reversi Othello</h1>
+            <div class="box-2">
+                <a href="./html/JogoIa.html" class="titulo">JOGADOR VS MAQUINA</a>
+            </div>
+                
+            <div class="box-1">
+                <a href="./html/jogo.html" class="titulo">JOGADOR VS JOGADOR</a>
+            </div>
+        </div>
+
+        <!-- Botão de Informação -->
+      <button class="info-btn" onclick="openPopup('info-popup')">Informação</button>
+
+      <!-- Botão "?" -->
+      <button class="question-btn" onclick="openPopup('question-popup')">?</button>
+
+      <!-- Pop-ups -->
+      <div id="info-popup" class="popup">
+        <p>Reversi, também conhecido como Othello, é um jogo de estratégia para dois jogadores que utilizam peças de cores contrastantes, geralmente pretas e brancas, em um tabuleiro 8x8. O objetivo do jogo é conquistar o maior número possível de peças do oponente, transformando-as para a sua própria cor.</p>
+
+        <p>As peças são colocadas alternadamente no tabuleiro durante o jogo, e a captura ocorre quando um jogador posiciona uma peça de forma a cercar as peças do adversário em uma linha reta, seja na horizontal, vertical ou diagonal.</p>
+        
+        <p>Uma característica única do Reversi é a capacidade de virar várias peças do oponente em uma única jogada, proporcionando reviravoltas emocionantes. A estratégia é fundamental, já que antecipar os movimentos do oponente, controlar o centro do tabuleiro e criar posições favoráveis são elementos-chave para o sucesso.</p>
+        
+        <p>O jogo continua até que o tabuleiro esteja completamente preenchido ou nenhum dos jogadores possa fazer mais movimentos válidos.</p>
+        
+        <p>Reversi/Othello é apreciado por sua simplicidade nas regras, ao mesmo tempo em que oferece profundidade estratégica, tornando-se um desafio envolvente para jogadores de todas as idades.</p>
+                <button onclick="closePopup('info-popup')">Fechar</button>
+      </div>
+
+      <div id="question-popup" class="popup">
+        <h2>Sobre o Desenvolvedor</h2>
+  <p>Olá! Eu sou Igor Zanatta Saraiva, um estudante de Engenharia de Computação.</p>
+
+  <h2>Objetivo do Projeto</h2>
+  <p>Este projeto foi desenvolvido como parte dos meus estudos na disciplina de Inteligência Artificial. Ele tem como base o algoritmo Minimax, que é uma técnica poderosa para jogos de decisão.</p>
+
+  <h2>Funcionalidades</h2>
+  <p>O código oferece duas opções de jogo: Player vs Player, onde dois jogadores podem competir entre si, e Player vs Máquina, utilizando a estratégia do Minimax para tornar a experiência desafiadora e estimulante.</p>
+
+  <h2>Divirta-se!</h2>
+  <p>Aproveite o jogo e explore as nuances da inteligência artificial aplicada ao universo do Reversi/Othello. Boa jogatina!</p>
+        <button onclick="closePopup('question-popup')">Fechar</button>
+      </div>
+
+      <!-- Sobreposição de fundo -->
+      <div class="overlay" onclick="closePopup('info-popup')"></div>
+      <div class="overlay" onclick="closePopup('question-popup')"></div>
+
+    </header>
+    
+</body>
+
+</html>
