@@ -1,7 +1,7 @@
 function Board(players, existentBoard) {
     // Função construtora para criar um tabuleiro
     // Altere aqui para mudar o tamanho do tabuleiro, 6 para 6x6 e 8 para 8x8
-    this.BoardSize = 6;
+    this.BoardSize = 8;
     this.players = players;
   
     this.generateBoard();
